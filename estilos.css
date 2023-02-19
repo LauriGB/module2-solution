@@ -59,13 +59,15 @@ h1 {
 .cajita {
 
   border-style: solid;
-  border-width: 3px;
+  border-width: 1px;
   border-color: black;
   position:absolute;
   top: 0;
   right:0;
   float:right;
   margin:0 0 10px 10px;
+  min-width: 100px;
+  text-align: center;
   
   
 
@@ -74,6 +76,7 @@ h1 {
 contenedor p {
 
  position:relative;
+ font-family: Arial, Helvetica, sans-serif;
  
 
 }
@@ -107,54 +110,56 @@ contenedor p {
  
   main {
     width: 100%;
-  }
-  .contenedor-padre {
+    }
+    
+    .contenedor-padre {
     font-size: 0;
     width: 100%;
-    position:relative;
+    height: 100%;
+    position: relative;
+    clear:both;
+    }
     
-  
-  }
-
-
-
-  .arriba1 {
-    
-    max-width: 49%;
-    height:auto;
-    vertical-align: top;
-    box-sizing: border-box;
-    border: 1px solid black;
-    padding: 10px;
-    font-size: 16px;
-  }
-
-  .arriba2 {
-    
-    max-width: 49%;
+    .arriba1 {
+    max-width: 48%;
     height: auto;
     vertical-align: top;
     box-sizing: border-box;
-    border: 1px solid black;
+    border: 3px solid black;
     padding: 10px;
     font-size: 16px;
-    margin-left: 5%;
-    position:absolute;
-    top:0;
-    right:0;
+    position: relative;
+    display: inline-block;
+    }
     
-  }
-
-  .abajo {
+    .arriba2 {
+    max-width: 48%;
+    height: auto;
+    vertical-align: top;
+    box-sizing: border-box;
+    border: 3px solid black;
+    padding: 10px;
+    font-size: 16px;
+    
+    position: relative;
+    display: inline-block;
+    float:right;
+      
+    }
+    
+    .abajo {
+    clear: both;
     display: inline-block;
     width: 99%;
     box-sizing: border-box;
-    border: 1px solid black;
+    border: 3px solid black;
     padding: 10px;
     font-size: 16px;
-  }
+    margin-top: 20px; /* Agregar esta línea para separar la caja de abajo del contenido superior */
+    }
 
-  .contenido{
-    margin-top: 20px;
-  }
+    .contenido{
+      margin-top:20px;
+    }
 }
+
